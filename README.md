@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/emoon/cfixed-string/workflows/CI/badge.svg)](https://github.com/emoon/cfixed-string/actions?workflow=CI)
+[![Build Status](https://github.com/emoon/cfixed-string/workflows/Rust/badge.svg)](https://github.com/emoon/cfixed-string/actions?workflow=Rust)
 [![Crates.io](https://img.shields.io/crates/v/cfixed-string.svg)](https://crates.io/crates/cfixed-string)
 [![Documentation](https://docs.rs/cfixed-string/badge.svg)](https://docs.rs/cfixed-string)
 
