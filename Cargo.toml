@@ -1,0 +1,14 @@
+[package]
+name = "cfixed-string"
+version = "1.0.0"
+edition = "2018"
+license = "MIT"
+authors = ["Daniel Collin <daniel@collin.com>", "Jake Shadle <jake.shadle@embarkstudios.com>"]
+description = "Pass Rust strings to C with potentially not needing heap allocation"
+categories = ["Data structures"]
+repository = "https://github.com/emoon/cfixed-string"
+documentation = "https://docs.rs/cfixed-string/1.0/cfixed-string"
+readme = "README.md"
+
+[badges]
+maintenance = {status = "actively-developed"}
