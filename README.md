@@ -3,6 +3,7 @@
 [![Documentation](https://docs.rs/cfixed-string/badge.svg)](https://docs.rs/cfixed-string)
 
 cfixed-string is used for passing Rust string to C with potentially not needing to do a heap allocation.
+
 A problem with using the standard library `CString` is that it will always allocate memory on the heap even if the string you are trying to use is very short. This can cause performance issues and potentially adding to memory fragmentation depending on your system.
 `CFixedString` will instead have a 512 byte buffer on the stack that can then be used when calling the FFI function. This allows strings that are less than 512 characters (including zero termination) to be on the stack instead of the heap which removes the need for memory allocation and free. In case the string is larger it will fallback to `CString` from the standard library.
 
