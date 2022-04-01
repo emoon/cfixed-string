@@ -24,14 +24,14 @@ Example
 use cfixed_string::CFixedString;
 
 fn main() {
-	// Create a string that will be stored on the stack
-	let ffi_str = CFixedString::from_str("test");
-	// And pass it to the FFI function
-	ffi_func(ffi_str.as_ptr());
+    // Create a string that will be stored on the stack
+    let ffi_str = CFixedString::from_str("test");
+    // And pass it to the FFI function
+    ffi_func(ffi_str.as_ptr());
 
-	// It's also possible to format a string directly on the stack if it fits using the format_c macro
-	let fmt_str = format_c!("hello {}", 123);
-	// And pass it to the FFI function
-	ffi_func(ffi_str.as_ptr());
+    // It's also possible to format a string directly on the stack if it fits using the format_c macro
+    let fmt_str = format_c!("hello {}", 123);
+    // And pass it to the FFI function
+    ffi_func(ffi_str.as_ptr());
 }
 ```
